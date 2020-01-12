@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  line-height: 1.6;
+  background: #fff; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+ul {
+  list-style: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase; }
+
+img {
+  width: 100%; }
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+img {
+  width: 100%; }
+
+/* Main */
+html,
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.7em; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+h1,
+h2,
+h3 {
+  padding-bottom: 20px; }
+
+p {
+  margin: 10px 0; }
+
+/* Navbar */
+#navbar {
+  background: #fff;
+  color: #333;
+  overflow: hidden;
+  height: 10vh; }
+
+#navbar a {
+  color: #333; }
+
+#navbar img {
+  width: 250px;
+  height: 80px; }
+
+.container {
+  margin-left: 200px;
+  overflow: hidden;
+  color: #333;
+  text-align: center;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 285px 285px 170px 320px 210px 220px; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  opacity: 0.7; }
+
+.dropbtn {
+  background-color: #fff;
+  color: #c27f6b;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer; }
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1; }
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block; }
+
+.cmpny1 {
+  padding-top: 20px;
+  text-align: center; }
+
+.cmpny1 .dropdown .dropbtn {
+  font-size: 4px; }
+
+.grid {
+  padding-top: 30px;
+  font-size: 18px;
+  text-align: center;
+  padding-right: 25px;
+  color: 2px solid blue; }
+
+.devTest {
+  font-size: 15px; }
+
+.shpCrtPlace {
+  display: grid;
+  grid-template-columns: 1fr 2fr; }
+
+.shoppingCrt .sc i {
+  padding-top: 31px;
+  padding-right: 17px;
+  color: #c27f6b; }
+
+.total {
+  font-size: 12px;
+  text-align: left;
+  padding-left: 8px;
+  padding-top: 4px; }
+
+.total .totalC p {
+  padding-bottom: 20px; }
+
+.count {
+  color: #c27f6b;
+  font-size: 20px;
+  padding-bottom: 10px; }
+
+.cmpny1 .dropdown .dropbtn {
+  font-size: 20px; }
+
+.cmpName {
+  font-size: 18px;
+  color: #30305f; }
+
+.cmpInfo {
+  font-size: 15px; }
+
+#section1 .picture {
+  border-bottom: 5px solid 204; }
+
+#section1 .picture img {
+  height: 75vh; }
+
+.fa-2x {
+  font-size: 3px; }
