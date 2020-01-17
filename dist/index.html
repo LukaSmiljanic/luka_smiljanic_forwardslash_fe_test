@@ -28,17 +28,18 @@
                   </button>
                   </div> 
               </div>
-        <div></div>
+        <div>
+            </div>
              <div class="shpCrtPlace">
                <div class="shoppingCrt">
-               <span class="sc"><i class="fas fa-shopping-cart"></i><span class="scCount" style="height: 25px;"></span></span> 
-               
-               </div>
-               <div class="total">
-                 <button class="clear-cart">X</button>
+              <span class="sc"><i class="fas fa-shopping-cart"></i><span class="scCount" style="height: 25px;"></span></span> 
+            </div>
+
+              <div class="total">
+                 <button class="clear-cart">Clear shopping cart</button>
              <p>Total: 
                <br>
-               <span class="count">$</span> 
+                <span style="font-size: 20px; color:rgb(194, 127, 107)">$</span> <span class="count"></span><span style="font-size: 20px; color:rgb(194, 127, 107)">,00</span>
              </p>
             </div>
             </div>
@@ -51,10 +52,35 @@
            </div>
         </nav>
       </header>
+
       <section id="section1">
-        <div class="picture">
-         <img src="img/picture1.jpg" alt="">
+        <div class="slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="mySlides fade">
+            <img src="img/img1.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="img/img2.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <img src="img/img3.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+          </div>
+         
+          <!-- Next and previous buttons -->
+          <div>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
         </div>
+       
       </section>
 
       <div class="search">
@@ -62,46 +88,55 @@
             <button><i class="fa fa-search fa-lg"></i></button>
             <input type="text" placeholder="Type here to search" name="search">  
         </div>
+
       <div class="filter">
-          <button onclick="myFunction()" class="filters">Brand <i class="fas fa-angle-down"></i> </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a>Garmin</a>
-            <a>Wrangler</a>
-            <a>Alfred Sung</a>
-          </div>
-          <button onclick="myFunction()" class="filters">Colours <i class="fas fa-angle-down"></i> </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a>Garmin</a>
-            <a>Wrangler</a>
-            <a>Alfred Sung</a>
-          </div>
-          <button onclick="myFunction()" class="filters">Material <i class="fas fa-angle-down"></i> </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a>Garmin</a>
-            <a>Wrangler</a>
-            <a>Alfred Sung</a>
-          </div>
-          <button onclick="myFunction()" class="filters">Features <i class="fas fa-angle-down"></i> </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a>Garmin</a>
-            <a>Wrangler</a>
-            <a>Alfred Sung</a>
-          </div>
-          <button onclick="myFunction()" class="filters">Price <i class="fas fa-angle-down"></i> </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a>Garmin</a>
-            <a>Wrangler</a>
-            <a>Alfred Sung</a>
-          </div>
-          <button onclick="myFunction()" class="filters">Gender <i class="fas fa-angle-down"></i> </button>
-          <div id="myDropdown" class="dropdown-content">
-            <a>Garmin</a>
-            <a>Wrangler</a>
-            <a>Alfred Sung</a>
-          </div>
+
+        <select id="sel" class="filters" name="Brand"><i class="fas fa-angle-down"></i>
+          <option selected hidden>Brand</option>
+          <option value="Alfred Sung">Alfred Sung</option>
+          <option value="Garmin">Garmin</option>
+          <option value="Wrangler">Wrangler</option>
+        </select> 
+
+        <select id="sel" class="filters" name="Colours"><i class="fas fa-angle-down"></i>
+          <option selected hidden>Colours</option>
+          <option value="Black">Black</option>
+          <option value="White">White</option>
+          <option value="Yellow">Yellow</option>
+        </select> 
+
+          <select id="sel" class="filters" name="Material"><i class="fas fa-angle-down"></i>
+          <option selected hidden>Material</option>
+          <option value="Ceramic">Ceramic</option>
+          <option value="Titanium">Titanium</option>
+          <option value="Stainless">Stainless</option>
+        </select> 
+
+          <select id="sel" class="filters" name="Features"><i class="fas fa-angle-down"></i>
+          <option selected hidden>Features</option>
+          <option value="GPS">GPS</option>
+          <option value="Waterproof">Waterproof</option>
+          <option value="COSC">COSC</option>
+        </select> 
+        
+        <select id="sel" class="filters" name="Price"><i class="fas fa-angle-down"></i>
+          <option selected hidden>Price</option>
+          <option value="To: 2500$">To: 2500$</option>
+          <option value="To: 5000$">To: 5000$</option>
+          <option value="To: 7000$">To: 7000$</option>
+        </select> 
+
+          <select id="sel" class="filters" name="Gender"><i class="fas fa-angle-down"></i>
+          <option selected hidden>Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select> 
+
       </div>
     </div>
-    <div class="activeFilters">
+
+    <div class="activeFilters"> 
     </div>
 
     <div class="subject">
@@ -116,7 +151,7 @@
     <section id="productList">
       <div class="products">
         <div class="product1">
-          <div class="starAndImg"><i class="far fa-star checked"></i>
+          <div class="starAndImg"><i class="far fa-star"></i>
           <img src="img/alfred.jpg" alt=""></div>
           <div class="alfred"> <p style="color:rgb(49, 49, 83);"><b>ALFRED SUNG</b> <br> <span class="gold">Slim Collection Series 5</span> </p></div>
           <div> <p style="color:rgb(49, 49, 83); font-size: 13px;"><b>AS7104SL-1A</b></p></div>
@@ -196,7 +231,7 @@
           <div> <p>3,700.00</p></div>
           <div> <p>$3,700.00</p></div>
           <div class="quantity"><p>0</p><span class="angles"><span class="angUp"><i class="fas fa-angle-up"></i></span><span class="angDown"><i class="fas fa-angle-down"></i></span></span></div>
-          <div> <button data-name="Alfred" data-price='3700' class="productCart"><b>A D D</b>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i></div>
+          <div> <button data-name="Alfred" data-price='3700' class="oos" style="background: #fff; color:rgb(49, 49, 83); font-size: 10px;"><img src="img/empty-cart.png" alt="" style="width: 20px; height: 20px; color:rgb(49, 49, 83);">OUT OF STOCK</button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i></div>
         </div>
         <div class="showfilter">
           <div style="text-align: right;"> <img src="img/showfilter.png" alt=""> <img src="img/showfilter.png" alt=""> <img src="img/showfilter.png" alt=""></div>

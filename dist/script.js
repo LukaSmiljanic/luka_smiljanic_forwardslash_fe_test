@@ -1,23 +1,3 @@
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-/*function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches(".dropbtn")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-};*/
-
 // Sticky header on scroll
 window.onscroll = function() {
   stickyHeader();
@@ -34,12 +14,47 @@ function stickyHeader() {
   }
 }
 
+// Slider
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].className += " active";
+}
+
 //Populate star icon
 
-function changeColor() {
-  var icon = document.getElementById("far fa-star");
-  icon.style.color = "yellow";
-}
+$(".starAndImg").on("click", function() {
+  $(this)
+    .find("i")
+    .toggleClass("far fas selected-star border-star");
+});
 
 //Collapsible
 var coll = document.getElementsByClassName("asdasd");
@@ -57,11 +72,9 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 
-// Show/hide
-
-$(".starAndImg").click(function() {
-  $(this).toggleClass("far fa-star");
-  $(this).toggleClass("fas fa-star");
+// Hide/Show
+$(".delete-item").click(function() {
+  $(".filter-group").hide();
 });
 
 // Open/close
@@ -88,50 +101,7 @@ $(document).ready(function() {
   });
 });
 
-// Filters
-
-$("select").on("change", function(e) {
-  $("div").text($(this).val());
-});
-
-// Dropdown buttons
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches(".filters")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains("show")) {
-        openDropdown.classList.remove("show");
-      }
-    }
-  }
-};
-
 // Favorite star
-
-$(".starAndImg").click(function() {
-  $("#receita-div").slideToggle(1, function() {
-    //
-    //  if you want to toogle at the eend of animation
-    //
-    //$("#btn-receitamob i").toggleClass("fa-chevron-right fa-chevron-down");
-  });
-
-  //
-  // if you want to toogle the icon right in time
-  //
-  $(this)
-    .find("i")
-    .toggleClass("fa-chevron-right fa-chevron-down");
-});
 
 // Shopping Cart
 // ************************************************
@@ -291,33 +261,7 @@ function displayCart() {
   var cartArray = shoppingCart.listCart();
   var output = "";
   for (var i in cartArray) {
-    output +=
-      "<tr>" +
-      "<td>" +
-      cartArray[i].name +
-      "</td>" +
-      "<td>(" +
-      cartArray[i].price +
-      ")</td>" +
-      "<td><div class='input-group'><button class='minus-item input-group-addon btn btn-primary' data-name=" +
-      cartArray[i].name +
-      ">-</button>" +
-      "<input type='number' class='item-count form-control' data-name='" +
-      cartArray[i].name +
-      "' value='" +
-      cartArray[i].count +
-      "'>" +
-      "<button class='plus-item btn btn-primary input-group-addon' data-name=" +
-      cartArray[i].name +
-      ">+</button></div></td>" +
-      "<td><button class='delete-item btn btn-danger' data-name=" +
-      cartArray[i].name +
-      ">X</button></td>" +
-      " = " +
-      "<td>" +
-      cartArray[i].total +
-      "</td>" +
-      "</tr>";
+    output += cartArray[i].price + cartArray[i].count + cartArray[i].total;
   }
   $("").html(output);
   $(".count").html(shoppingCart.totalCart());
@@ -333,3 +277,18 @@ $(".show-cart").on("change", ".item-count", function(event) {
 });
 
 displayCart();
+
+// Filters
+$(".filters").change(function() {
+  var filterID = $(this).val();
+  var output = "";
+  output +=
+    '<div class="filter-group">' +
+    "<b>" +
+    filterID +
+    "</b>" +
+    "<button class='delete-item'><b>x</button></div>" +
+    "</td>" +
+    "<td>";
+  $(".activeFilters").append(output);
+});
