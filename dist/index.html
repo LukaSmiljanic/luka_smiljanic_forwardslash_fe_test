@@ -12,6 +12,7 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="css/mobile.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="script.js"></script>
     <title>Document</title>
@@ -32,7 +33,7 @@
             </div>
              <div class="shpCrtPlace">
                <div class="shoppingCrt">
-              <span class="sc"><i class="fas fa-shopping-cart"></i><span class="scCount" style="height: 25px;"></span></span> 
+              <span class="sc"><i class="fas fa-shopping-cart"></i><span class="scCount"></span></span> 
             </div>
 
               <div class="total">
@@ -73,7 +74,7 @@
           </div>
          
           <!-- Next and previous buttons -->
-          <div>
+          <div class="dots">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
@@ -152,16 +153,16 @@
       <div class="products">
         <div class="product1">
           <div class="starAndImg"><i class="far fa-star"></i>
-          <img src="img/alfred.jpg" alt=""></div>
-          <div class="alfred"> <p style="color:rgb(49, 49, 83);"><b>ALFRED SUNG</b> <br> <span class="gold">Slim Collection Series 5</span> </p></div>
-          <div> <p style="color:rgb(49, 49, 83); font-size: 13px;"><b>AS7104SL-1A</b></p></div>
-          <div> <p>$3,700.00</p></div>
-          <div> <p>$3,700.00</p></div>
+          <img src="img/alfred.jpg" alt="" style="width:70px; height: 70px;"></div>
+          <div class="alfred"><p>ALFRED SUNG<br> <span class="gold">Slim Collection Series 5</span> </p></div>
+          <div class="itemNo"> <p>AS7104SL-1A</p></div>
+          <div class="listing"> <p>$3,700.00</p></div>
+          <div class="wholesale"> <p>$3,700.00</p></div>
           <div class="quantity"><p>0</p><span class="angles"><span class="angUp"><i class="fas fa-angle-up"></i></span><span class="angDown"><i class="fas fa-angle-down"></i></span></span></div>
           <div><button data-name="Alfred" data-price='3700' class="productCart"><b>A D D</b>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down" id="angl"></i></div>
         </div>
           <div class="showfilter">
-            <div style="text-align: right:"> <img src="img/showfilter.png" alt=""> <img src="img/showfilter.png" alt=""> <img src="img/showfilter.png" alt=""></div>
+            <div style="text-align: right;"> <img src="img/showfilter.png" alt=""> <img src="img/showfilter.png" alt=""> <img src="img/showfilter.png" alt=""></div>
             <div><p> Color: Black  <i class="fas fa-circle" style="color: black;"></i></p></div>
             <div><p>Band: Solid Case/Bezel material: Titanium/Cobarion</p></div>
             <div><p>Features:GPS,Waterproof,Bluetooth</p></div>
@@ -172,10 +173,10 @@
         <div class="product1">
           <div class="starAndImg"><i class="far fa-star"></i>
           <img src="img/garmin.jpg" alt=""></div>
-          <div class="alfred"> <p style="color:rgb(49, 49, 83);"><b>GARMIN</b><br> <span class="gold">Classic Collection</span> </pstyle="color:rgb(96, 96, 221);></div>
-          <div> <p style="color:rgb(49, 49, 83);font-size: 13px;"><b>AW2304WE-9Q</b></p></div>
-          <div> <p>$4,200.00</p></div>
-          <div> <p>$4,000.00</p></div>
+          <div class="alfred"> <p>GARMIN<br> <span class="gold">Classic Collection</span> </pstyle="color:rgb(96, 96, 221);></div>
+          <div class="itemNo"> <p>AW2304WE-9Q</p></div>
+          <div class="listing"> <p>$4,200.00</p></div>
+          <div class="wholesale"> <p>$4,000.00</p></div>
           <div class="quantity"><p>4</p><span class="angles"><span class="angUp"><i class="fas fa-angle-up"></i></span><span class="angDown"><i class="fas fa-angle-down"></i></span></span></div>
           <div > <button data-name="Garmin" data-price='4200' class="productCart" class="productCart" style="background: rgb(59, 59, 194);"><b>A D D E D</b>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-check"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i></div>
         </div>
@@ -190,10 +191,10 @@
         <div class="product1">
           <div class="starAndImg"><i class="far fa-star"></i>
           <img src="img/alfred.jpg" alt=""></div>
-          <div class="alfred"> <p style="color:rgb(49, 49, 83);"><b>ALFRED SUNG</b> <br> <span class="gold">Slim Collection Series 5</span> </p></div>
-          <div> <p style="color:rgb(49, 49, 83);font-size: 13px;"><b>AS7104SL-1A</b></p></div>
-          <div> <p>$3,700.00</p></div>
-          <div> <p>$3,700.00</p></div>
+          <div class="alfred"> <p>ALFRED SUNG<br> <span class="gold">Slim Collection Series 5</span> </p></div>
+          <div class="itemNo"> <p>AS7104SL-1A</p></div>
+          <div class="listing"> <p>$3,700.00</p></div>
+          <div class="wholesale"> <p>$3,700.00</p></div>
           <div class="quantity"><p>0</p><span class="angles"><span class="angUp"><i class="fas fa-angle-up"></i></span><span class="angDown"><i class="fas fa-angle-down"></i></span></span></div>
           <div> <button data-name="Alfred" data-price='3700' class="productCart"><b>A D D</b>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i></div>
         </div>
@@ -208,10 +209,10 @@
         <div class="product1">
           <div class="starAndImg"><i class="far fa-star"></i>
           <img src="img/wrangler.jpg" alt=""></div>
-          <div class="alfred"> <p style="color:rgb(49, 49, 83);"><b>WRANGLER</b> <br> <span class="gold">Western Collection</span> </p></div>
-          <div> <p style="color:rgb(49, 49, 83);font-size: 13px;"><b>AS7494SL-8R</b></p></div>
-          <div> <p>$5,600.00</p></div>
-          <div> <p>$5,200.00</p></div>
+          <div class="alfred"> <p>WRANGLER <br> <span class="gold">Western Collection</span> </p></div>
+          <div class="itemNo"> <p>AS7494SL-8R</p></div>
+          <div class="listing"> <p>$5,600.00</p></div>
+          <div class="wholesale"> <p>$5,200.00</p></div>
           <div class="quantity"><p>0</p><span class="angles"><span class="angUp"><i class="fas fa-angle-up"></i></span><span class="angDown"><i class="fas fa-angle-down"></i></span></span></div>
           <div> <button data-name="Wrangler" data-price='5600' class="productCart"><b>A D D</b>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i></div>
         </div>
@@ -226,10 +227,10 @@
         <div class="product1">
           <div class="starAndImg"><i class="far fa-star"></i>
           <img src="img/alfred.jpg" alt=""></div>
-          <div class="alfred"> <p style="color:rgb(49, 49, 83);"><b>ALFRED SUNG</b> <br> <span class="gold">Slim Collection Series 5</span> </p></div>
-          <div> <p style="color:rgb(49, 49, 83);font-size: 13px;"><b>AS7104SL-1A</b></p></div>
-          <div> <p>3,700.00</p></div>
-          <div> <p>$3,700.00</p></div>
+          <div class="alfred"> <p>ALFRED SUNG <br> <span class="gold">Slim Collection Series 5</span> </p></div>
+          <div class="itemNo"> <p>AS7104SL-1A</p></div>
+          <div class="listing"> <p>3,700.00</p></div>
+          <div class="wholesale"> <p>$3,700.00</p></div>
           <div class="quantity"><p>0</p><span class="angles"><span class="angUp"><i class="fas fa-angle-up"></i></span><span class="angDown"><i class="fas fa-angle-down"></i></span></span></div>
           <div> <button data-name="Alfred" data-price='3700' class="oos" style="background: #fff; color:rgb(49, 49, 83); font-size: 10px;"><img src="img/empty-cart.png" alt="" style="width: 20px; height: 20px; color:rgb(49, 49, 83);">OUT OF STOCK</button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i></div>
         </div>
@@ -244,10 +245,10 @@
         <div class="product1">
           <div class="starAndImg"><i class="far fa-star"></i>
           <img src="img/garmin.jpg" alt=""></div>
-          <div class="alfred"> <p style="color:rgb(49, 49, 83);"><b>GARMIN</b><br> <span class="gold">Classic Collection Series 5</span> </p></div>
-          <div> <p style="color:rgb(49, 49, 83);font-size: 13px;"><b>AS2E0G8E-2U</b></p></div>
-          <div> <p>2,100.00</p></div>
-          <div> <p>$2,100.00</p></div>
+          <div class="alfred"> <p>GARMIN<br> <span class="gold">Classic Collection Series 5</span> </p></div>
+          <div class="itemNo"> <p>AS2E0G8E-2U</p></div>
+          <div class="listing"> <p>2,100.00</p></div>
+          <div class="wholesale"> <p>$2,100.00</p></div>
           <div class="quantity"><p>0</p><span class="angles"><span class="angUp"><i class="fas fa-angle-up"></i></span><span class="angDown"><i class="fas fa-angle-down"></i></span></span></div>
           <div> <button data-name="Garmin2" data-price='2100' class="productCart"><b>A D D</b>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shopping-cart"></i></button>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-down"></i></div>
         </div>
@@ -265,10 +266,10 @@
     <section class="picturesRel">
       <div class="pictureRel1">
         <img src="img/picture2.jpg" alt="">
-        <p><span class="lorem"><b>Lorem ipsum</b></span><br> <br> <br> Dolor sit amet consectetur adipisicing elit. Veniam nostrum cupiditate necessitatibus, exercitationem ipsum autem magnam quaerat impedit. Eligendi quam autem itaque recusandae, nisi ducimus id non atque quidem. Alias perferendis vel quo in voluptate, ex et blanditiis laborum incidunt, consequuntur consectetur minima cupiditate porro mollitia, rem velit veritatis quis.</p>
+        <p><span class="lorem"><b>Lorem Ipsum</b></span><br> <br> <br> Dolor sit amet consectetur adipisicing elit. Veniam nostrum cupiditate necessitatibus, exercitationem ipsum autem magnam quaerat impedit. Eligendi quam autem itaque recusandae, nisi ducimus id non atque quidem. Alias perferendis vel quo in voluptate, ex et blanditiis laborum incidunt, consequuntur consectetur minima cupiditate porro mollitia, rem velit veritatis quis.</p>
       </div>
       <div class="watchic">
-        <p><span class="lorem2"><b>Lorem ipsum</b></span> <br><br> <br> Dolor sit amet consectetur, adipisicing elit. Numquam temporibus libero reiciendis expedita labore sapiente, voluptates, odit culpa autem quaerat nulla quasi corporis cum totam quidem repudiandae possimus distinctio quae magnam provident eligendi maxime debitis? Omnis repellendus quam, molestias architecto dignissimos repellat maiores ut quia suscipit laudantium voluptatum eligendi incidunt?</p>
+        <p><span class="lorem2"><b>Lorem Ipsum</b></span> <br><br> <br> Dolor sit amet consectetur, adipisicing elit. Numquam temporibus libero reiciendis expedita labore sapiente, voluptates, odit culpa autem quaerat nulla quasi corporis cum totam quidem repudiandae possimus distinctio quae magnam provident eligendi maxime debitis? Omnis repellendus quam, molestias architecto dignissimos repellat maiores ut quia suscipit laudantium voluptatum eligendi incidunt?</p>
         <img src="img/picture2.jpg" alt="">
       </div>
     </section>
@@ -278,15 +279,15 @@
         <div class="links">
         <h2>LINKS</h2>
         <h3>Company</h3>
-        <h3> <span class="catalogs">Catalogs</span> </h3>
+        <h4> Catalogs</h4>
         <p>Find a dealer <br> Login/Register</p>
-        </div>
-        <div class="devtest">
+      </div>
+      <div class="devtest">
             <h2>DEV TEST</h2>
-            <p>Dev Test <br> 1421 38 Brooklyn, NY</p>
-            <p>11245-5647 USA <br> <br> <br> <span class="copyright"><b>&copy;DEVTEST --</b> </span> 2019, All rights reserved   </p>
-        </div>
-        <div>
+            <p>Dev Test <br> 1421 38 Brooklyn, NY <br>11245-5647 USA</p>
+             <p><br> <br> <br> <span class="copyright"><b>&copy;DEVTEST --</b> </span> 2019, All rights reserved   </p>
+      </div>
+      <div class="newsletter">
             <h2>NEWSLETTER</h2> 
             <div class="email">
               <div class="email-container">
@@ -294,9 +295,9 @@
                   <input type="text" placeholder="EMAIL ADDRESS" name="email">  
                   <span class="arrow"><i class="fas fa-arrow-right"></i></span>
               </div>  
-        </div>
-       </div>
+          </div>
       </div>
+    </div>
     </footer>
     <script src="script.js"></script>
   </body>

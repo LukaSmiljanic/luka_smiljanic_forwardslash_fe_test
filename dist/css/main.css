@@ -59,6 +59,7 @@ img {
 
 /* Hide the images by default */
 .mySlides {
+  height: 88vh;
   display: none; }
 
 /* Next & previous buttons 
@@ -106,18 +107,6 @@ img {
   top: 0; }
 
 /* The dots/bullets/indicators */
-.dot {
-  top: 50%;
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: grid;
-  grid-template-rows: repeat 3, 1fr;
-  transition: background-color 0.6s ease; }
-
 .active,
 .dot:hover {
   background-color: #717171; }
@@ -185,8 +174,20 @@ img {
   padding-right: 25px;
   color: 2px solid blue; }
 
-.devTest {
-  font-size: 15px; }
+.devtest {
+  color: #313153; }
+
+.devtest h2 {
+  padding-top: 5px;
+  color: #313153;
+  font-family: "Arial";
+  font-size: 26px;
+  letter-spacing: 13px;
+  padding-right: 10px; }
+
+.devtest p {
+  padding-top: 35px;
+  font-size: 16px; }
 
 .shpCrtPlace {
   display: grid;
@@ -199,13 +200,15 @@ img {
 .scCount {
   border-radius: 50%;
   position: absolute;
-  top: 10px;
+  top: 13px;
   right: 348px;
   width: 18px;
-  height: 36px;
+  height: 15px;
   background: #04018a;
   color: #fdfdfd;
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 2px;
+  font-size: 12px; }
 
 .total {
   font-size: 12px;
@@ -269,7 +272,7 @@ img {
   border: none;
   width: 1400px;
   padding-left: 35px;
-  height: 40px; }
+  height: 35px; }
 
 .filter {
   display: grid;
@@ -312,8 +315,9 @@ img {
 
 .subjects {
   color: #6060dd;
-  text-align: center;
-  padding-right: 30px; }
+  text-align: right;
+  padding-right: 30px;
+  font-size: 15px; }
 
 .brand {
   color: #6060dd; }
@@ -332,7 +336,7 @@ img {
 .product1 {
   text-align: center;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(7, 1.5fr);
   padding-right: 30px;
   color: #6060dd;
   cursor: pointer;
@@ -358,25 +362,46 @@ img {
 .products {
   margin-left: 250px;
   display: grid;
-  grid-template-rows: repeat(5, 1.5fr);
+  grid-template-rows: repeat(5, 1fr);
   padding-bottom: 40px;
   padding-top: 10px;
   margin-bottom: auto;
   overflow: auto;
   height: auto !important; }
 
-.product1 .alfred p {
+.alfred p {
+  text-align: left;
+  color: #313153;
+  font-size: 20px; }
+
+.listing p {
+  text-align: right;
+  padding-top: 17px; }
+
+.wholesale p {
+  text-align: right;
+  padding-top: 17px; }
+
+.itemNo {
   text-align: left; }
 
+.itemNo p {
+  color: #313153;
+  font-size: 16px;
+  text-align: right;
+  padding-top: 18px;
+  padding-right: 7px; }
+
 .gold {
+  font-size: 14px;
   color: #af8a7f; }
 
 .product1 {
   height: 10vh; }
 
 .products img {
-  width: 90px;
-  height: 10vh;
+  width: 70px;
+  height: 70px;
   padding: 5px 5px;
   margin-right: 50px; }
 
@@ -388,7 +413,7 @@ img {
   background: #3f3f94;
   color: #fff;
   font-size: 15px;
-  width: 150px;
+  width: 130px;
   text-align: center;
   cursor: pointer;
   margin-top: 10px;
@@ -443,8 +468,8 @@ img {
   width: 1920px; }
 
 #productList {
-  height: 63vh;
-  padding-bottom: auto;
+  height: 65vh;
+  padding-bottom: 70px;
   overflow: auto;
   height: auto !important; }
 
@@ -453,7 +478,6 @@ img {
   height: 50px;
   width: 100%;
   position: relative;
-  margin-top: 3vh;
   display: grid;
   grid-template-columns: repeat(2, 50%); }
 
@@ -465,12 +489,14 @@ img {
   position: absolute;
   text-align: left;
   border: 1px;
-  height: 50vh;
-  margin-right: 800px;
-  margin-top: 50px;
-  padding: 50px 50px;
-  margin-left: 400px;
-  color: #fff; }
+  height: 350px;
+  margin-right: 900px;
+  margin-top: 70px;
+  width: 650px;
+  padding: 50px 80px;
+  margin-left: 250px;
+  color: #fff;
+  font-size: 20px; }
 
 .pictureRel {
   position: relative;
@@ -481,25 +507,30 @@ img {
   color: #333;
   position: absolute;
   text-align: left;
-  width: 600px;
-  height: 50vh;
-  margin-left: 800px;
-  margin-top: 50px;
-  padding: 50px 50px;
-  margin-right: 500px; }
+  width: 620px;
+  height: 40vh;
+  margin-left: 860px;
+  margin-top: 85px;
+  padding: 50px 80px;
+  margin-right: 500px;
+  font-size: 20px; }
 
 .lorem {
-  font-size: 30px;
-  color: #b48762; }
+  font-size: 70px;
+  color: #b48762;
+  font-weight: bolder;
+  font-family: "Arial"; }
 
 .lorem2 {
-  font-size: 30px;
-  color: #fff; }
+  color: #fff;
+  font-size: 70px;
+  font-weight: bolder;
+  font-family: "Arial"; }
 
 .split {
-  height: 40vh;
+  height: 50vh;
   margin-left: 250px;
-  width: 1400px;
+  width: 1420px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -509,25 +540,53 @@ img {
   padding-bottom: 100px; }
 
 .links {
-  border-right: 2px solid #e6cab1; }
+  border-right: 2px dotted #e6cab1; }
 
 .links p {
-  color: #313153; }
+  color: #313153;
+  padding-top: 20px;
+  font-size: 16px; }
 
-.links h3,
-h2 {
-  color: #313153; }
+.links h2 {
+  padding-top: 5px;
+  color: #313153;
+  font-family: "Arial";
+  font-size: 26px;
+  letter-spacing: 13px;
+  padding-right: 10px; }
+
+.links h3 {
+  color: #313153;
+  font-size: 18px;
+  letter-spacing: 5px;
+  padding-right: 10px;
+  padding-top: 40px; }
+
+.links h4 {
+  color: #c27f6b;
+  font-size: 18px;
+  letter-spacing: 5px;
+  padding-right: 10px;
+  padding-top: 10px; }
 
 .devtest {
-  border-right: 2px solid #e6cab1;
+  border-right: 2px dotted #e6cab1;
   padding: 0px 0px;
   color: #313153; }
 
-.split .links .catalogs {
-  color: #c27f6b; }
-
 .copyright {
   color: #313153; }
+
+.newsletter {
+  color: #313153; }
+
+.newsletter h2 {
+  padding-top: 5px;
+  color: #313153;
+  font-family: "Arial";
+  font-size: 26px;
+  letter-spacing: 13px;
+  padding-right: 10px; }
 
 .email {
   height: 100px;
@@ -536,9 +595,10 @@ h2 {
 .email-container {
   display: inline-block;
   position: relative;
-  margin-top: 3vh;
+  margin-top: 1vh;
   height: 100px;
-  width: 150px; }
+  width: 150px;
+  margin-right: 250px; }
 
 .email input[type="text"] {
   padding: 6px 50px;
@@ -548,7 +608,7 @@ h2 {
   border: none;
   width: 200px;
   height: 50px;
-  border: 1px solid #e6cab1; }
+  border: 1px dotted #313153; }
 
 .email-container i {
   position: absolute;
@@ -570,7 +630,8 @@ h2 {
   grid-template-columns: 1fr 1fr; }
 
 .quantity p {
-  text-align: right; }
+  text-align: right;
+  padding-top: 17px; }
 
 .add {
   padding-bottom: 30px; }
@@ -618,11 +679,8 @@ h2 {
   height: 3vh; }
 
 .showfilter img {
-  height: 12px;
-  width: 12px; }
-
-.starAndImg .checked {
-  color: yellow solid; }
+  height: 15px;
+  width: 15px; }
 
 .filter-group {
   border: 1px solid;
@@ -645,12 +703,11 @@ h2 {
   background: fff(63, 63, 148);
   color: #313153;
   font-size: 15px;
-  width: 150px;
+  width: 130px;
   text-align: left;
   cursor: pointer;
   border: 4px #fff;
-  height: 50px;
-  padding-left: 20px; }
+  height: 50px; }
 
 .oos img {
   margin: 0; }
